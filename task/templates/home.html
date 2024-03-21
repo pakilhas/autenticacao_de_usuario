@@ -1,0 +1,43 @@
+{% extends 'menu.html'%}
+
+
+
+{% block content %}
+{% if user.is_authenticated %}
+<main class="conteiner py-3 text-center">
+
+    <div class="row d-flex justify-content-center">
+        <div class="col-sm-2 mx-2">
+            <div class="card">
+                <div class="card-body text-center"> 
+                    <a href="#" class="btn btn-dark">OPÇÃO 01</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-2 mx-2">
+            <div class="card">
+                <div class="card-body text-center"> 
+                    <a href="#" class="btn btn-dark">OPÇÃO 02</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-2 mx-2">
+            <div class="card">
+                <div class="card-body text-center"> 
+                    <a href="#" class="btn btn-dark">OPÇÃO 03</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    </div>
+{% endif %}
+   
+    
+
+</main>
+{% endblock %}
+
+
+
+
